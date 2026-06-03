@@ -29,7 +29,11 @@ export default function RootLayout({
             letterSpacing:'-0.01em',color:'#f0ede6',
             display:'flex',alignItems:'center',gap:'8px',
           }}>
-            US GTM Engine
+   <img 
+  src="/logo.png" 
+  alt="US GTM Engine" 
+style={{height:'44px',width:'auto',filter:'brightness(0) invert(1)'}}
+/>
           </a>
           <div style={{display:'flex',alignItems:'center',gap:'24px'}}>
             <a href="/founders" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}}>Founders</a>
