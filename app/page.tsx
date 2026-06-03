@@ -1,26 +1,121 @@
+'use client'
+
 export default function Home() {
   return (
-    <main>
-      <section style={{minHeight:'100vh',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',padding:'4rem 2.5rem',textAlign:'center'}}>
-        <p style={{color:'#e8a020',fontSize:'0.85rem',fontWeight:'600',letterSpacing:'0.12em',textTransform:'uppercase',marginBottom:'1.5rem'}}>US Market Entry for International B2B Companies</p>
-        <h1 style={{fontSize:'clamp(2.5rem, 6vw, 4.5rem)',fontWeight:'800',color:'#f5f5f0',maxWidth:'800px',marginBottom:'1.5rem',lineHeight:'1.1',letterSpacing:'-0.03em'}}>A complete US GTM team for companies serious about entering the US market.</h1>
-        <p style={{color:'#8892a4',fontSize:'1.15rem',maxWidth:'560px',marginBottom:'4rem',lineHeight:'1.7'}}>Who are you?</p>
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'1.5rem',maxWidth:'860px',width:'100%'}}>
-          <a href="/founders" style={{backgroundColor:'#111827',border:'1px solid #1e2a3a',borderRadius:'8px',padding:'2.5rem',textAlign:'left',display:'block',cursor:'pointer'}}>
-            <p style={{color:'#e8a020',fontSize:'0.75rem',fontWeight:'600',letterSpacing:'0.1em',textTransform:'uppercase',marginBottom:'1rem'}}>For Founders and CEOs</p>
-            <h2 style={{color:'#f5f5f0',fontSize:'1.4rem',fontWeight:'700',marginBottom:'1rem',lineHeight:'1.3',letterSpacing:'-0.02em'}}>The US hire you are about to make is an impossible job.</h2>
-            <p style={{color:'#8892a4',fontSize:'0.95rem',lineHeight:'1.6',marginBottom:'1.5rem'}}>Five jobs. One hire. It does not work. There is a better way to enter the US.</p>
-            <span style={{color:'#e8a020',fontSize:'0.9rem',fontWeight:'600'}}>See how it works</span>
-          </a>
-          <a href="/investors" style={{backgroundColor:'#111827',border:'1px solid #1e2a3a',borderRadius:'8px',padding:'2.5rem',textAlign:'left',display:'block',cursor:'pointer'}}>
-            <p style={{color:'#e8a020',fontSize:'0.75rem',fontWeight:'600',letterSpacing:'0.1em',textTransform:'uppercase',marginBottom:'1rem'}}>For PE and VC Operating Partners</p>
-            <h2 style={{color:'#f5f5f0',fontSize:'1.4rem',fontWeight:'700',marginBottom:'1rem',lineHeight:'1.3',letterSpacing:'-0.02em'}}>Your portfolio company US expansion strategy is built on assumption.</h2>
-            <p style={{color:'#8892a4',fontSize:'0.95rem',lineHeight:'1.6',marginBottom:'1.5rem'}}>Capital committed before assumptions are tested. There is a governed alternative.</p>
-            <span style={{color:'#e8a020',fontSize:'0.9rem',fontWeight:'600'}}>See how it works</span>
-          </a>
+    <main style={{fontFamily:"'Plus Jakarta Sans', sans-serif",maxWidth:'1100px',margin:'0 auto'}}>
+
+      <section style={{padding:'56px 48px 40px',position:'relative'}}>
+
+        <div style={{display:'flex',alignItems:'center',gap:'8px',marginBottom:'24px'}}>
+          <div style={{width:'6px',height:'6px',background:'#e8a020',borderRadius:'50%'}}></div>
+          <span style={{color:'#e8a020',fontSize:'11px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>US Market Entry · B2B · International</span>
         </div>
-        <p style={{color:'#8892a4',fontSize:'0.85rem',marginTop:'3rem',letterSpacing:'0.05em'}}>Built by operators. Validated by results.</p>
+
+        <h1 style={{fontSize:'clamp(2rem,3vw,2.8rem)',fontWeight:'800',color:'#f0ede6',lineHeight:'1.08',letterSpacing:'-0.03em',marginBottom:'20px'}}>
+          Your US GTM team. <span style={{color:'rgba(240,237,230,0.3)'}}>Day one.</span> Not month nine.
+        </h1>
+
+        <p style={{color:'rgba(255,255,255,0.4)',fontSize:'14px',lineHeight:'1.7',marginBottom:'44px',maxWidth:'420px'}}>
+          A complete fractional team — CRO, CMO, analyst, content, SDR — running your US go-to-market from day one. Who are you?
+        </p>
+
+        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px',marginBottom:'36px'}}>
+
+          <a href="/founders" style={{
+            backgroundColor:'rgba(232,160,32,0.04)',
+            border:'1px solid rgba(232,160,32,0.4)',
+            borderRadius:'10px',padding:'24px',
+            display:'block',textDecoration:'none',
+            position:'relative',overflow:'hidden',
+          }}>
+            <div style={{position:'absolute',top:0,left:0,right:0,height:'2px',background:'#e8a020'}}></div>
+            <p style={{color:'#e8a020',fontSize:'10px',fontWeight:'600',letterSpacing:'0.12em',textTransform:'uppercase',marginBottom:'12px'}}>For Founders & CEOs</p>
+            <h2 style={{color:'#f0ede6',fontSize:'17px',fontWeight:'700',lineHeight:'1.3',letterSpacing:'-0.01em',marginBottom:'10px'}}>The US hire you are about to make is an impossible job.</h2>
+            <p style={{color:'rgba(255,255,255,0.38)',fontSize:'13px',lineHeight:'1.6',marginBottom:'16px'}}>Five functions. One hire. It does not work. There is a better way to enter the US.</p>
+            <span style={{color:'#e8a020',fontSize:'12px',fontWeight:'600'}}>See how it works →</span>
+          </a>
+
+          <a href="/investors" style={{
+            backgroundColor:'rgba(255,255,255,0.03)',
+            border:'1px solid rgba(255,255,255,0.07)',
+            borderRadius:'10px',padding:'24px',
+            display:'block',textDecoration:'none',
+            position:'relative',overflow:'hidden',
+          }}
+          onMouseEnter={e => {
+            e.currentTarget.style.borderColor='rgba(232,160,32,0.4)'
+            e.currentTarget.style.backgroundColor='rgba(232,160,32,0.04)'
+          }}
+          onMouseLeave={e => {
+            e.currentTarget.style.borderColor='rgba(255,255,255,0.07)'
+            e.currentTarget.style.backgroundColor='rgba(255,255,255,0.03)'
+          }}>
+            <p style={{color:'#e8a020',fontSize:'10px',fontWeight:'600',letterSpacing:'0.12em',textTransform:'uppercase',marginBottom:'12px'}}>For PE & VC Partners</p>
+            <h2 style={{color:'#f0ede6',fontSize:'17px',fontWeight:'700',lineHeight:'1.3',letterSpacing:'-0.01em',marginBottom:'10px'}}>Your portfolio company's US GTM strategy is built on assumption.</h2>
+            <p style={{color:'rgba(255,255,255,0.38)',fontSize:'13px',lineHeight:'1.6',marginBottom:'16px'}}>Capital committed before assumptions are tested. There is a governed alternative.</p>
+            <span style={{color:'#e8a020',fontSize:'12px',fontWeight:'600'}}>See how it works →</span>
+          </a>
+
+        </div>
+
+        <div style={{display:'flex',alignItems:'center',gap:'16px',paddingTop:'28px',borderTop:'1px solid rgba(255,255,255,0.06)'}}>
+          {['Built by operators','30M-record B2B database','Fixed monthly cost','No lock-in'].map((item,i,arr) => (
+            <div key={i} style={{display:'flex',alignItems:'center',gap:'16px'}}>
+              <span style={{color:'rgba(255,255,255,0.25)',fontSize:'12px',fontWeight:'500'}}>{item}</span>
+              {i < arr.length-1 && <div style={{width:'3px',height:'3px',background:'rgba(255,255,255,0.2)',borderRadius:'50%'}}></div>}
+            </div>
+          ))}
+        </div>
       </section>
+
+      <section style={{padding:'0 48px',marginBottom:'2px'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'1px',background:'rgba(255,255,255,0.06)',borderRadius:'10px',overflow:'hidden'}}>
+          {[
+            {val:'5',label:'Person fractional team'},
+            {val:'90',label:'Day launch sprint'},
+            {val:'500+',label:'ICP contacts engaged'},
+            {val:'$400K',label:'vs. first US CRO cost'},
+          ].map((stat,i) => (
+            <div key={i} style={{background:'#080d1a',padding:'24px 20px'}}>
+              <div style={{color:'#e8a020',fontSize:'26px',fontWeight:'800',letterSpacing:'-0.03em',marginBottom:'4px'}}>{stat.val}</div>
+              <div style={{color:'rgba(255,255,255,0.35)',fontSize:'12px',fontWeight:'500'}}>{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div style={{display:'flex',alignItems:'center',gap:'12px',margin:'32px 48px 24px'}}>
+        <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
+        <span style={{color:'rgba(255,255,255,0.25)',fontSize:'10px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>Inside the US Launch Sprint</span>
+        <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
+      </div>
+
+      <section style={{padding:'0 48px',display:'flex',flexDirection:'column',gap:'3px'}}>
+        {[
+          {num:'01',title:'ICP defined and validated',body:'Refined against real prospect response. Drawn from our 30M-record B2B sales intelligence database.'},
+          {num:'02',title:'Competitive landscape mapped',body:'Named competitors, adjacent categories, and the build-or-do-nothing alternatives that win more deals than founders realize.'},
+          {num:'03',title:'US messaging built and tested',body:'Pressure-tested against actual US buyers in month one, not month nine.'},
+          {num:'04',title:'500+ ICP contacts engaged',body:'LinkedIn and email, multi-channel, supported by original B2B content across the full buyer journey.'},
+          {num:'05',title:'Pipeline opened',body:'First meetings booked. Opportunities qualified. Deals advanced by live US field sales.'},
+        ].map((item,i) => (
+          <div key={i} style={{display:'flex',alignItems:'flex-start',gap:'16px',padding:'16px 20px',backgroundColor:'rgba(255,255,255,0.02)',borderRadius:'6px',border:'1px solid rgba(255,255,255,0.05)'}}>
+            <div style={{color:'#e8a020',fontSize:'12px',fontWeight:'700',minWidth:'20px',marginTop:'1px'}}>{item.num}</div>
+            <div>
+              <div style={{color:'#f0ede6',fontSize:'14px',fontWeight:'600',marginBottom:'3px'}}>{item.title}</div>
+              <div style={{color:'rgba(255,255,255,0.35)',fontSize:'12px',lineHeight:'1.6'}}>{item.body}</div>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <section style={{margin:'32px 48px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+        <div>
+          <div style={{color:'#f0ede6',fontSize:'16px',fontWeight:'700',letterSpacing:'-0.01em',marginBottom:'4px'}}>Ready to enter the US the right way?</div>
+          <div style={{color:'rgba(255,255,255,0.35)',fontSize:'12px'}}>One conversation. No commitment.</div>
+        </div>
+        <a href="/contact" style={{backgroundColor:'#e8a020',color:'#080d1a',fontSize:'13px',fontWeight:'700',padding:'12px 24px',borderRadius:'6px',whiteSpace:'nowrap',textDecoration:'none'}}>Book a call →</a>
+      </section>
+
     </main>
   )
 }
