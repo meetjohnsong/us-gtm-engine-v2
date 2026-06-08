@@ -18,34 +18,31 @@ export default function RootLayout({
       </head>
       <body style={{fontFamily:"'Plus Jakarta Sans', sans-serif"}}>
         <nav style={{
-          position:'fixed',top:0,left:0,right:0,zIndex:50,
-          padding:'14px 32px',
-          display:'flex',alignItems:'center',justifyContent:'space-between',
-          backgroundColor:'rgba(8,13,26,0.97)',
-          borderBottom:'1px solid rgba(255,255,255,0.07)',
-        }}>
-          <a href="/" style={{
-            fontSize:'14px',fontWeight:'700',
-            letterSpacing:'-0.01em',color:'#f0ede6',
-            display:'flex',alignItems:'center',gap:'8px',
-          }}>
-   <img 
-  src="/logo.png" 
-  alt="US GTM Engine" 
-style={{height:'44px',width:'auto',filter:'brightness(0) invert(1)'}}
-/>
-          </a>
-          <div style={{display:'flex',alignItems:'center',gap:'24px'}}>
-            <a href="/founders" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}}>Founders</a>
-            <a href="/investors" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}}>Investors</a>
-            <a href="/about" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}}>About</a>
-            <a href="/contact" style={{
-              backgroundColor:'#e8a020',color:'#080d1a',
-              padding:'8px 16px',borderRadius:'6px',
-              fontSize:'12px',fontWeight:'700',
-            }}>Book a Call</a>
-          </div>
-        </nav>
+  position:'fixed',top:0,left:0,right:0,zIndex:50,
+  padding:'12px 20px',
+  display:'flex',alignItems:'center',justifyContent:'space-between',
+  backgroundColor:'rgba(8,13,26,0.97)',
+  borderBottom:'1px solid rgba(255,255,255,0.07)',
+}}>
+  <a href="/" style={{display:'flex',alignItems:'center'}}>
+    <img
+      src="/logo.png"
+      alt="US GTM Engine"
+      style={{height:'36px',width:'auto',filter:'brightness(0) invert(1)'}}
+    />
+  </a>
+  <div style={{display:'flex',alignItems:'center',gap:'16px'}}>
+    <a href="/founders" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}} className="desktop-only">Founders</a>
+    <a href="/investors" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}} className="desktop-only">Investors</a>
+    <a href="/about" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}} className="desktop-only">About</a>
+    <a href="/contact" style={{
+      backgroundColor:'#e8a020',color:'#080d1a',
+      padding:'8px 14px',borderRadius:'6px',
+      fontSize:'12px',fontWeight:'700',
+      whiteSpace:'nowrap',
+    }}>Book a Call</a>
+  </div>
+</nav>
         <div style={{paddingTop:'57px',backgroundColor:'#080d1a',minHeight:'100vh'}}>
           {children}
         </div>

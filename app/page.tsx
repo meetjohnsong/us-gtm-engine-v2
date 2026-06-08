@@ -19,7 +19,7 @@ export default function Home() {
           A complete fractional team — CRO, CMO, analyst, content, SDR — running your US go-to-market from day one.
         </p>
 
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px',marginBottom:'36px'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'16px',marginBottom:'36px'}}>
 
           <a href="/founders" style={{
             backgroundColor:'rgba(232,160,32,0.04)',

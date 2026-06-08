@@ -16,3 +16,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: inline !important;
+  }
+}
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-only {
+    display: inline !important;
+  }
+}
