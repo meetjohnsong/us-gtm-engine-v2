@@ -11,12 +11,12 @@ export default function Home() {
           <span style={{color:'#e8a020',fontSize:'11px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>US Market Entry · B2B · International</span>
         </div>
 
-        <h1 style={{fontSize:'clamp(2rem,3vw,2.8rem)',fontWeight:'800',color:'#f0ede6',lineHeight:'1.08',letterSpacing:'-0.03em',marginBottom:'20px'}}>
+        <h1 style={{fontSize:'clamp(2rem,3vw,2.8rem)',fontWeight:'800',color:'#f0ede6',lineHeight:'1.08',letterSpacing:'-0.01em',marginBottom:'20px'}}>
           Your US GTM team. <span style={{color:'rgba(240,237,230,0.3)'}}>Day one.</span> Not month nine.
         </h1>
 
         <p style={{color:'rgba(255,255,255,0.4)',fontSize:'14px',lineHeight:'1.7',marginBottom:'44px',maxWidth:'420px'}}>
-          A complete fractional team — CRO, CMO, analyst, content, SDR — running your US go-to-market from day one. Who are you?
+          A complete fractional team — CRO, CMO, analyst, content, SDR — running your US go-to-market from day one.
         </p>
 
         <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px',marginBottom:'36px'}}>
@@ -30,11 +30,10 @@ export default function Home() {
           }}>
             <div style={{position:'absolute',top:0,left:0,right:0,height:'2px',background:'#e8a020'}}></div>
             <p style={{color:'#e8a020',fontSize:'10px',fontWeight:'600',letterSpacing:'0.12em',textTransform:'uppercase',marginBottom:'12px'}}>For Founders & CEOs</p>
-            <h2 style={{color:'#f0ede6',fontSize:'17px',fontWeight:'700',lineHeight:'1.3',letterSpacing:'-0.01em',marginBottom:'10px'}}>The US hire you are about to make is an impossible job.</h2>
-            <p style={{color:'rgba(255,255,255,0.38)',fontSize:'13px',lineHeight:'1.6',marginBottom:'16px'}}>Five functions. One hire. It does not work. There is a better way to enter the US.</p>
+            <h2 style={{color:'#f0ede6',fontSize:'17px',fontWeight:'700',lineHeight:'1.3',letterSpacing:'-0.01em',marginBottom:'10px'}}>The country manager or CRO you plan to hire will have an impossible job.</h2>
+            <p style={{color:'rgba(255,255,255,0.38)',fontSize:'13px',lineHeight:'1.6',marginBottom:'16px'}}>Five functions. One hire. It does not work. There is a better way to grow in the US.</p>
             <span style={{color:'#e8a020',fontSize:'12px',fontWeight:'600'}}>See how it works →</span>
           </a>
-
           <a href="/investors" style={{
             backgroundColor:'rgba(255,255,255,0.03)',
             border:'1px solid rgba(255,255,255,0.07)',
@@ -50,9 +49,10 @@ export default function Home() {
             e.currentTarget.style.borderColor='rgba(255,255,255,0.07)'
             e.currentTarget.style.backgroundColor='rgba(255,255,255,0.03)'
           }}>
+            <div style={{position:'absolute',top:0,left:0,right:0,height:'2px',background:'#e8a020'}}></div>
             <p style={{color:'#e8a020',fontSize:'10px',fontWeight:'600',letterSpacing:'0.12em',textTransform:'uppercase',marginBottom:'12px'}}>For PE & VC Partners</p>
             <h2 style={{color:'#f0ede6',fontSize:'17px',fontWeight:'700',lineHeight:'1.3',letterSpacing:'-0.01em',marginBottom:'10px'}}>Your portfolio company's US GTM strategy is built on assumption.</h2>
-            <p style={{color:'rgba(255,255,255,0.38)',fontSize:'13px',lineHeight:'1.6',marginBottom:'16px'}}>Capital committed before assumptions are tested. There is a governed alternative.</p>
+            <p style={{color:'rgba(255,255,255,0.38)',fontSize:'13px',lineHeight:'1.6',marginBottom:'16px'}}>Capital committed before assumptions are tested. We offer a governed alternative.</p>
             <span style={{color:'#e8a020',fontSize:'12px',fontWeight:'600'}}>See how it works →</span>
           </a>
 
