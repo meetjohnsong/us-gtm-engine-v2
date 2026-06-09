@@ -58,7 +58,7 @@ export default function Home() {
 
         </div>
 
-        <div style={{display:'flex',alignItems:'center',gap:'16px',paddingTop:'28px',borderTop:'1px solid rgba(255,255,255,0.06)'}}>
+        <div style={{display:'flex',alignItems:'center',gap:'12px',paddingTop:'28px',borderTop:'1px solid rgba(255,255,255,0.06)',flexWrap:'wrap'}}>
           {['Built by operators','30M-record B2B database','Fixed monthly cost','No lock-in'].map((item,i,arr) => (
             <div key={i} style={{display:'flex',alignItems:'center',gap:'16px'}}>
               <span style={{color:'rgba(255,255,255,0.25)',fontSize:'12px',fontWeight:'500'}}>{item}</span>
@@ -69,7 +69,7 @@ export default function Home() {
       </section>
 
       <section style={{padding:'0 48px',marginBottom:'2px'}}>
-        <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'1px',background:'rgba(255,255,255,0.06)',borderRadius:'10px',overflow:'hidden'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(2,1fr)',gap:'1px',background:'rgba(255,255,255,0.06)',borderRadius:'10px',overflow:'hidden'}}>
           {[
             {val:'5',label:'Person fractional team'},
             {val:'90',label:'Day launch sprint'},
@@ -108,7 +108,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section style={{margin:'32px 48px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+      <section style={{margin:'32px 48px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',flexDirection:'column',alignItems:'flex-start',gap:'16px'}}>
         <div>
           <div style={{color:'#f0ede6',fontSize:'16px',fontWeight:'700',letterSpacing:'-0.01em',marginBottom:'4px'}}>Ready to enter the US the right way?</div>
           <div style={{color:'rgba(255,255,255,0.35)',fontSize:'12px'}}>One conversation. No commitment.</div>
