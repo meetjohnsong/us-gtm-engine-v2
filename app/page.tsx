@@ -58,12 +58,9 @@ export default function Home() {
 
         </div>
 
-        <div style={{display:'flex',alignItems:'center',gap:'12px',paddingTop:'28px',borderTop:'1px solid rgba(255,255,255,0.06)',flexWrap:'wrap'}}>
-          {['Built by operators','30M-record B2B database','Fixed monthly cost','No lock-in'].map((item,i,arr) => (
-            <div key={i} style={{display:'flex',alignItems:'center',gap:'16px'}}>
-              <span style={{color:'rgba(255,255,255,0.25)',fontSize:'12px',fontWeight:'500'}}>{item}</span>
-              {i < arr.length-1 && <div style={{width:'3px',height:'3px',background:'rgba(255,255,255,0.2)',borderRadius:'50%'}}></div>}
-            </div>
+        <div style={{display:'flex',flexWrap:'wrap',gap:'12px',paddingTop:'28px',borderTop:'1px solid rgba(255,255,255,0.06)'}}>
+          {['Built by operators','30M-record B2B database','Fixed monthly cost','No lock-in'].map((item,i) => (
+            <span key={i} style={{color:'rgba(255,255,255,0.25)',fontSize:'12px',fontWeight:'500'}}>{item}</span>
           ))}
         </div>
       </section>
