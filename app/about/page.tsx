@@ -46,7 +46,7 @@ export default function AboutPage() {
           <span style={{color:'rgba(255,255,255,0.25)',fontSize:'10px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>Our principles</span>
           <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
         </div>
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'8px'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'8px'}}>
           {principles.map((item,i) => (
             <div key={i} style={{backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.05)',borderRadius:'8px',padding:'20px'}}>
               <p style={{color:'#f0ede6',fontSize:'13px',fontWeight:'700',marginBottom:'6px'}}>{item.title}</p>
@@ -58,7 +58,7 @@ export default function AboutPage() {
 
       {/* Stats */}
       <section style={{padding:'0 48px 48px'}}>
-        <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'1px',background:'rgba(255,255,255,0.06)',borderRadius:'10px',overflow:'hidden'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(120px, 1fr))',gap:'1px',background:'rgba(255,255,255,0.06)',borderRadius:'10px',overflow:'hidden'}}>
           {stats.map((stat,i) => (
             <div key={i} style={{background:'#080d1a',padding:'24px 20px'}}>
               <div style={{color:'#e8a020',fontSize:'26px',fontWeight:'800',letterSpacing:'-0.03em',marginBottom:'4px'}}>{stat.value}</div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
           <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
         </div>
 
-        <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'12px',marginBottom:'12px'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(260px, 1fr))',gap:'12px',marginBottom:'12px'}}>
           {founders.map((founder,i) => (
             <a key={i} href={founder.linkedin} target="_blank" rel="noreferrer" style={{textDecoration:'none',display:'block'}}>
               <div style={{backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.07)',borderRadius:'10px',overflow:'hidden'}}>
@@ -109,7 +109,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section style={{margin:'0 48px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+      <section style={{margin:'0 48px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',flexDirection:'column',alignItems:'flex-start',gap:'16px'}}>
         <div>
           <div style={{color:'#f0ede6',fontSize:'16px',fontWeight:'700',letterSpacing:'-0.01em',marginBottom:'4px'}}>Want to know if we are the right fit?</div>
           <div style={{color:'rgba(255,255,255,0.35)',fontSize:'12px'}}>One conversation. No commitment.</div>
