@@ -36,7 +36,7 @@ export default function Home() {
           </a>
           <a href="/investors" style={{
             backgroundColor:'rgba(255,255,255,0.03)',
-            border:'1px solid rgba(255,255,255,0.07)',
+            border:'1px solid rgba(255,235,195,0.09)',
             borderRadius:'10px',padding:'24px',
             display:'block',textDecoration:'none',
             position:'relative',overflow:'hidden',
@@ -46,7 +46,7 @@ export default function Home() {
             e.currentTarget.style.backgroundColor='rgba(232,160,32,0.04)'
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.borderColor='rgba(255,255,255,0.07)'
+            e.currentTarget.style.borderColor='rgba(255,235,195,0.09)'
             e.currentTarget.style.backgroundColor='rgba(255,255,255,0.03)'
           }}>
             <div style={{position:'absolute',top:0,left:0,right:0,height:'2px',background:'#e8a020'}}></div>
@@ -73,7 +73,7 @@ export default function Home() {
             {val:'500+',label:'ICP contacts engaged'},
             {val:'$400K',label:'vs. first US CRO cost'},
           ].map((stat,i) => (
-            <div key={i} style={{background:'#0d1526',padding:'24px 20px'}}>
+            <div key={i} style={{background:'#0f0e1a',padding:'24px 20px'}}>
               <div style={{color:'#e8a020',fontSize:'26px',fontWeight:'800',letterSpacing:'-0.03em',marginBottom:'4px'}}>{stat.val}</div>
               <div style={{color:'rgba(255,255,255,0.60)',fontSize:'14px',fontWeight:'500'}}>{stat.label}</div>
             </div>
@@ -82,9 +82,9 @@ export default function Home() {
       </section>
 
       <div style={{display:'flex',alignItems:'center',gap:'12px',margin:'32px 48px 24px'}}>
-        <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
+        <div style={{flex:1,height:'1px',background:'rgba(255,235,195,0.09)'}}></div>
         <span style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>Inside the US Launch Sprint</span>
-        <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
+        <div style={{flex:1,height:'1px',background:'rgba(255,235,195,0.09)'}}></div>
       </div>
 
       <section style={{padding:'0 48px',display:'flex',flexDirection:'column',gap:'3px'}}>
@@ -95,7 +95,7 @@ export default function Home() {
           {num:'04',title:'500+ ICP contacts engaged',body:'LinkedIn and email, multi-channel, supported by original B2B content across the full buyer journey.'},
           {num:'05',title:'Pipeline opened',body:'First meetings booked. Opportunities qualified. Deals advanced by live US field sales.'},
         ].map((item,i) => (
-          <div key={i} style={{display:'flex',alignItems:'flex-start',gap:'16px',padding:'16px 20px',backgroundColor:'rgba(255,255,255,0.02)',borderRadius:'6px',border:'1px solid rgba(255,255,255,0.05)'}}>
+          <div key={i} style={{display:'flex',alignItems:'flex-start',gap:'16px',padding:'16px 20px',backgroundColor:'rgba(255,255,255,0.02)',borderRadius:'6px',border:'1px solid rgba(255,235,195,0.07)'}}>
             <div style={{color:'#e8a020',fontSize:'14px',fontWeight:'700',minWidth:'20px',marginTop:'1px'}}>{item.num}</div>
             <div>
               <div style={{color:'#f0ede6',fontSize:'14px',fontWeight:'600',marginBottom:'3px'}}>{item.title}</div>
@@ -110,7 +110,7 @@ export default function Home() {
           <div style={{color:'#f0ede6',fontSize:'16px',fontWeight:'700',letterSpacing:'-0.01em',marginBottom:'4px'}}>Ready to enter the US the right way?</div>
           <div style={{color:'rgba(255,255,255,0.60)',fontSize:'14px'}}>One conversation. No commitment.</div>
         </div>
-        <a href="/contact" style={{backgroundColor:'#e8a020',color:'#0d1526',fontSize:'14px',fontWeight:'700',padding:'12px 24px',borderRadius:'6px',whiteSpace:'nowrap',textDecoration:'none'}}>Book a call →</a>
+        <a href="/contact" style={{backgroundColor:'#e8a020',color:'#0f0e1a',fontSize:'14px',fontWeight:'700',padding:'12px 24px',borderRadius:'6px',whiteSpace:'nowrap',textDecoration:'none'}}>Book a call →</a>
       </section>
 
     </main>

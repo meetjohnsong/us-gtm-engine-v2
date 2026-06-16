@@ -3,7 +3,7 @@ export default function InvestorsPage() {
     <main style={{fontFamily:"'Plus Jakarta Sans', sans-serif",maxWidth:'1100px',margin:'0 auto'}}>
 
       {/* Hero */}
-      <section style={{padding:'56px 48px 48px'}}>
+      <section style={{padding:'56px 64px 48px'}}>
         <div style={{display:'flex',alignItems:'center',gap:'8px',marginBottom:'24px'}}>
           <div style={{width:'6px',height:'6px',background:'#e8a020',borderRadius:'50%'}}></div>
           <span style={{color:'#e8a020',fontSize:'12px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>For PE & VC Operating Partners</span>
@@ -27,7 +27,7 @@ export default function InvestorsPage() {
       </section>
 
       {/* Governed Alternative */}
-      <section style={{margin:'0 48px 2px',backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.07)',borderRadius:'10px',padding:'32px'}}>
+      <section style={{margin:'0 48px 2px',backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,235,195,0.09)',borderRadius:'10px',padding:'32px'}}>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'32px',alignItems:'start'}}>
           <div>
             <p style={{color:'#e8a020',fontSize:'12px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase',marginBottom:'16px'}}>The governed alternative</p>
@@ -46,7 +46,7 @@ export default function InvestorsPage() {
               {label:'Timeline',val:'90-day fixed-cost sprint'},
               {label:'Cost vs. failed expansion',val:'A fraction of $1-2M'},
             ].map((item,i) => (
-              <div key={i} style={{padding:'12px 16px',backgroundColor:'rgba(255,255,255,0.03)',borderRadius:'6px',border:'1px solid rgba(255,255,255,0.05)'}}>
+              <div key={i} style={{padding:'12px 16px',backgroundColor:'rgba(255,255,255,0.03)',borderRadius:'6px',border:'1px solid rgba(255,235,195,0.07)'}}>
                 <div style={{color:'rgba(255,255,255,0.60)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:'2px'}}>{item.label}</div>
                 <div style={{color:'#f0ede6',fontSize:'14px',fontWeight:'600'}}>{item.val}</div>
               </div>
@@ -58,9 +58,9 @@ export default function InvestorsPage() {
       {/* Sprint Section */}
       <section style={{padding:'48px 48px 0'}}>
         <div style={{display:'flex',alignItems:'center',gap:'12px',marginBottom:'32px'}}>
-          <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
+          <div style={{flex:1,height:'1px',background:'rgba(255,235,195,0.09)'}}></div>
           <span style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>The US Launch Sprint</span>
-          <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
+          <div style={{flex:1,height:'1px',background:'rgba(255,235,195,0.09)'}}></div>
         </div>
 
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'32px',marginBottom:'32px'}}>
@@ -83,7 +83,7 @@ export default function InvestorsPage() {
               {num:'04',title:'500+ ICP contacts engaged',body:'LinkedIn and email, multi-channel, supported by original B2B content.'},
               {num:'05',title:'Pipeline opened and CRM-documented',body:'Auditable evidence of engagement quality — not anecdotal traction.'},
             ].map((item,i) => (
-              <div key={i} style={{display:'flex',alignItems:'flex-start',gap:'12px',padding:'12px 16px',backgroundColor:'rgba(255,255,255,0.02)',borderRadius:'6px',border:'1px solid rgba(255,255,255,0.05)'}}>
+              <div key={i} style={{display:'flex',alignItems:'flex-start',gap:'12px',padding:'12px 16px',backgroundColor:'rgba(255,255,255,0.02)',borderRadius:'6px',border:'1px solid rgba(255,235,195,0.07)'}}>
                 <div style={{color:'#e8a020',fontSize:'12px',fontWeight:'700',minWidth:'20px',marginTop:'1px'}}>{item.num}</div>
                 <div>
                   <div style={{color:'#f0ede6',fontSize:'14px',fontWeight:'600',marginBottom:'2px'}}>{item.title}</div>
@@ -102,11 +102,11 @@ export default function InvestorsPage() {
       </section>
 
       {/* After Day 90 */}
-      <section style={{padding:'0 48px 48px'}}>
+      <section style={{padding:'0 64px 48px'}}>
         <div style={{display:'flex',alignItems:'center',gap:'12px',marginBottom:'32px'}}>
-          <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
+          <div style={{flex:1,height:'1px',background:'rgba(255,235,195,0.09)'}}></div>
           <span style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>What happens after day 90</span>
-          <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
+          <div style={{flex:1,height:'1px',background:'rgba(255,235,195,0.09)'}}></div>
         </div>
 
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(260px, 1fr))',gap:'12px',marginBottom:'32px'}}>
@@ -115,7 +115,7 @@ export default function InvestorsPage() {
             {path:'Path 2',title:'Scale capital deployment with confidence.',body:'The Sprint produced the evidence to greenlight the next tranche. Now the operating partner is funding a proven motion, not an experiment.'},
             {path:'Path 3',title:'Graduate to in-house team.',body:'When the portfolio company is ready to hire a permanent US team, the incoming leader inherits a running US GTM Engine — the playbook, the live pipeline, the CRM, and the relationships — not a cold start.'},
           ].map((item,i) => (
-            <div key={i} style={{backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.07)',borderRadius:'10px',padding:'24px',position:'relative',overflow:'hidden'}}>
+            <div key={i} style={{backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,235,195,0.09)',borderRadius:'10px',padding:'24px',position:'relative',overflow:'hidden'}}>
               <div style={{position:'absolute',top:0,left:0,right:0,height:'2px',background:'#e8a020'}}></div>
               <p style={{color:'#e8a020',fontSize:'12px',fontWeight:'600',letterSpacing:'0.12em',textTransform:'uppercase',marginBottom:'8px'}}>{item.path}</p>
               <p style={{color:'#f0ede6',fontSize:'14px',fontWeight:'700',marginBottom:'8px',letterSpacing:'-0.01em'}}>{item.title}</p>
@@ -128,12 +128,12 @@ export default function InvestorsPage() {
       </section>
 
       {/* CTA */}
-      <section style={{margin:'0 48px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',flexDirection:'column',alignItems:'flex-start',gap:'16px'}}>
+      <section style={{margin:'0 64px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',flexDirection:'column',alignItems:'flex-start',gap:'16px'}}>
         <div>
           <div style={{color:'#f0ede6',fontSize:'16px',fontWeight:'700',letterSpacing:'-0.01em',marginBottom:'4px'}}>Ready to put a validation gate in front of your next US expansion?</div>
           <div style={{color:'rgba(255,255,255,0.60)',fontSize:'14px'}}>One conversation. No commitment.</div>
         </div>
-        <a href="/contact" style={{backgroundColor:'#e8a020',color:'#0d1526',fontSize:'14px',fontWeight:'700',padding:'12px 24px',borderRadius:'6px',whiteSpace:'nowrap',textDecoration:'none'}}>Book a call →</a>
+        <a href="/contact" style={{backgroundColor:'#e8a020',color:'#0f0e1a',fontSize:'14px',fontWeight:'700',padding:'12px 24px',borderRadius:'6px',whiteSpace:'nowrap',textDecoration:'none'}}>Book a call →</a>
       </section>
 
     </main>

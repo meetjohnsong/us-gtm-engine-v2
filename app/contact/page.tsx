@@ -42,7 +42,7 @@ export default function ContactPage() {
   return (
     <main style={{fontFamily:"'Plus Jakarta Sans', sans-serif",maxWidth:'1100px',margin:'0 auto'}}>
 
-      <section style={{padding:'56px 48px 48px',display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'32px',alignItems:'start'}}>
+      <section style={{padding:'56px 64px 48px',display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'32px',alignItems:'start'}}>
 
         {/* Left */}
         <div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
               {label:'First call duration',val:'30 minutes'},
               {label:'No obligation',val:'We identify fit together'},
             ].map((item,i) => (
-              <div key={i} style={{padding:'14px 16px',backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.05)',borderRadius:'8px'}}>
+              <div key={i} style={{padding:'14px 16px',backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,235,195,0.07)',borderRadius:'8px'}}>
                 <div style={{color:'rgba(255,255,255,0.50)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:'2px'}}>{item.label}</div>
                 <div style={{color:'#f0ede6',fontSize:'14px',fontWeight:'600'}}>{item.val}</div>
               </div>
@@ -73,7 +73,7 @@ export default function ContactPage() {
         </div>
 
         {/* Right — Form */}
-        <div style={{backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.07)',borderRadius:'10px',padding:'32px'}}>
+        <div style={{backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,235,195,0.09)',borderRadius:'10px',padding:'32px'}}>
           {submitted ? (
             <div style={{textAlign:'center',padding:'40px 0'}}>
               <div style={{width:'48px',height:'48px',borderRadius:'50%',backgroundColor:'rgba(232,160,32,0.15)',border:'1px solid rgba(232,160,32,0.3)',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 16px'}}>
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 <textarea required name="message" rows={5} style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'14px',outline:'none',resize:'vertical',boxSizing:'border-box'}} />
               </div>
               {error && <p style={{color:'#e8a020',fontSize:'14px'}}>{error}</p>}
-              <button type="submit" disabled={loading} style={{backgroundColor:'#e8a020',color:'#0d1526',padding:'14px 24px',borderRadius:'6px',fontWeight:'700',fontSize:'14px',border:'none',cursor:loading ? 'not-allowed' : 'pointer',width:'100%',fontFamily:"'Plus Jakarta Sans', sans-serif",opacity:loading ? 0.7 : 1}}>
+              <button type="submit" disabled={loading} style={{backgroundColor:'#e8a020',color:'#0f0e1a',padding:'14px 24px',borderRadius:'6px',fontWeight:'700',fontSize:'14px',border:'none',cursor:loading ? 'not-allowed' : 'pointer',width:'100%',fontFamily:"'Plus Jakarta Sans', sans-serif",opacity:loading ? 0.7 : 1}}>
                 {loading ? 'Sending...' : 'Send message →'}
               </button>
               <p style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',textAlign:'center'}}>We typically respond within one business day.</p>
