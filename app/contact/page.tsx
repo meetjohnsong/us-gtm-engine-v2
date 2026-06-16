@@ -42,7 +42,7 @@ export default function ContactPage() {
   return (
     <main style={{fontFamily:"'Plus Jakarta Sans', sans-serif",maxWidth:'1100px',margin:'0 auto'}}>
 
-      <section style={{padding:'56px 48px 48px',display:'grid',gridTemplateColumns:'1fr 1fr',gap:'64px',alignItems:'start'}}>
+      <section style={{padding:'56px 48px 48px',display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'32px',alignItems:'start'}}>
 
         {/* Left */}
         <div>
