@@ -48,13 +48,13 @@ export default function ContactPage() {
         <div>
           <div style={{display:'flex',alignItems:'center',gap:'8px',marginBottom:'24px'}}>
             <div style={{width:'6px',height:'6px',background:'#e8a020',borderRadius:'50%'}}></div>
-            <span style={{color:'#e8a020',fontSize:'11px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>Contact</span>
+            <span style={{color:'#e8a020',fontSize:'12px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase'}}>Contact</span>
           </div>
           <h1 style={{fontSize:'clamp(2rem,3vw,2.8rem)',fontWeight:'800',color:'#f0ede6',lineHeight:'1.08',letterSpacing:'-0.03em',marginBottom:'20px'}}>
             Start the conversation.<br/>
             <span style={{color:'rgba(240,237,230,0.3)'}}>No commitment.</span>
           </h1>
-          <p style={{color:'rgba(255,255,255,0.4)',fontSize:'14px',lineHeight:'1.7',marginBottom:'40px'}}>
+          <p style={{color:'rgba(255,255,255,0.65)',fontSize:'14px',lineHeight:'1.7',marginBottom:'40px'}}>
             If you are evaluating US market entry or want to put a validation gate in front of your next expansion, we should talk. We would rather have an honest conversation than pitch a program.
           </p>
 
@@ -65,8 +65,8 @@ export default function ContactPage() {
               {label:'No obligation',val:'We identify fit together'},
             ].map((item,i) => (
               <div key={i} style={{padding:'14px 16px',backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.05)',borderRadius:'8px'}}>
-                <div style={{color:'rgba(255,255,255,0.3)',fontSize:'10px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:'2px'}}>{item.label}</div>
-                <div style={{color:'#f0ede6',fontSize:'13px',fontWeight:'600'}}>{item.val}</div>
+                <div style={{color:'rgba(255,255,255,0.50)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:'2px'}}>{item.label}</div>
+                <div style={{color:'#f0ede6',fontSize:'14px',fontWeight:'600'}}>{item.val}</div>
               </div>
             ))}
           </div>
@@ -80,31 +80,31 @@ export default function ContactPage() {
                 <span style={{color:'#e8a020',fontSize:'20px'}}>✓</span>
               </div>
               <p style={{color:'#f0ede6',fontSize:'16px',fontWeight:'700',marginBottom:'8px'}}>Message received.</p>
-              <p style={{color:'rgba(255,255,255,0.4)',fontSize:'13px',lineHeight:'1.6'}}>We typically respond within one business day.</p>
+              <p style={{color:'rgba(255,255,255,0.65)',fontSize:'14px',lineHeight:'1.6'}}>We typically respond within one business day.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{display:'flex',flexDirection:'column',gap:'16px'}}>
               <div>
-                <label style={{color:'rgba(255,255,255,0.4)',fontSize:'11px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',display:'block',marginBottom:'8px'}}>Name</label>
-                <input required name="name" type="text" style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'13px',outline:'none',boxSizing:'border-box'}} />
+                <label style={{color:'rgba(255,255,255,0.65)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',display:'block',marginBottom:'8px'}}>Name</label>
+                <input required name="name" type="text" style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'14px',outline:'none',boxSizing:'border-box'}} />
               </div>
               <div>
-                <label style={{color:'rgba(255,255,255,0.4)',fontSize:'11px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',display:'block',marginBottom:'8px'}}>Email</label>
-                <input required name="email" type="email" style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'13px',outline:'none',boxSizing:'border-box'}} />
+                <label style={{color:'rgba(255,255,255,0.65)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',display:'block',marginBottom:'8px'}}>Email</label>
+                <input required name="email" type="email" style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'14px',outline:'none',boxSizing:'border-box'}} />
               </div>
               <div>
-                <label style={{color:'rgba(255,255,255,0.4)',fontSize:'11px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',display:'block',marginBottom:'8px'}}>Company</label>
-                <input required name="company" type="text" style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'13px',outline:'none',boxSizing:'border-box'}} />
+                <label style={{color:'rgba(255,255,255,0.65)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',display:'block',marginBottom:'8px'}}>Company</label>
+                <input required name="company" type="text" style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'14px',outline:'none',boxSizing:'border-box'}} />
               </div>
               <div>
-                <label style={{color:'rgba(255,255,255,0.4)',fontSize:'11px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',display:'block',marginBottom:'8px'}}>Message</label>
-                <textarea required name="message" rows={5} style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'13px',outline:'none',resize:'vertical',boxSizing:'border-box'}} />
+                <label style={{color:'rgba(255,255,255,0.65)',fontSize:'12px',fontWeight:'600',letterSpacing:'0.08em',textTransform:'uppercase',display:'block',marginBottom:'8px'}}>Message</label>
+                <textarea required name="message" rows={5} style={{width:'100%',backgroundColor:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.1)',borderRadius:'6px',padding:'12px 14px',color:'#f0ede6',fontSize:'14px',outline:'none',resize:'vertical',boxSizing:'border-box'}} />
               </div>
-              {error && <p style={{color:'#e8a020',fontSize:'12px'}}>{error}</p>}
-              <button type="submit" disabled={loading} style={{backgroundColor:'#e8a020',color:'#080d1a',padding:'14px 24px',borderRadius:'6px',fontWeight:'700',fontSize:'13px',border:'none',cursor:loading ? 'not-allowed' : 'pointer',width:'100%',fontFamily:"'Plus Jakarta Sans', sans-serif",opacity:loading ? 0.7 : 1}}>
+              {error && <p style={{color:'#e8a020',fontSize:'14px'}}>{error}</p>}
+              <button type="submit" disabled={loading} style={{backgroundColor:'#e8a020',color:'#0d1526',padding:'14px 24px',borderRadius:'6px',fontWeight:'700',fontSize:'14px',border:'none',cursor:loading ? 'not-allowed' : 'pointer',width:'100%',fontFamily:"'Plus Jakarta Sans', sans-serif",opacity:loading ? 0.7 : 1}}>
                 {loading ? 'Sending...' : 'Send message →'}
               </button>
-              <p style={{color:'rgba(255,255,255,0.25)',fontSize:'11px',textAlign:'center'}}>We typically respond within one business day.</p>
+              <p style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',textAlign:'center'}}>We typically respond within one business day.</p>
             </form>
           )}
         </div>
