@@ -28,7 +28,7 @@ export default function FoundersPage() {
 
       {/* Team Section */}
       <section style={{margin:'0 48px 2px',backgroundColor:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.07)',borderRadius:'10px',padding:'32px'}}>
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'48px',alignItems:'center'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'32px',alignItems:'start'}}>
           <div>
             <p style={{color:'#e8a020',fontSize:'10px',fontWeight:'600',letterSpacing:'0.14em',textTransform:'uppercase',marginBottom:'16px'}}>The offering</p>
             <h2 style={{color:'#f0ede6',fontSize:'clamp(1.4rem,2vw,1.8rem)',fontWeight:'800',lineHeight:'1.2',letterSpacing:'-0.02em',marginBottom:'16px'}}>
@@ -57,7 +57,7 @@ export default function FoundersPage() {
           <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
         </div>
 
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'32px',marginBottom:'32px'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'32px',marginBottom:'32px'}}>
           <div>
             <h2 style={{color:'#f0ede6',fontSize:'clamp(1.4rem,2vw,1.8rem)',fontWeight:'800',lineHeight:'1.2',letterSpacing:'-0.02em',marginBottom:'16px'}}>
               First US revenue.<br/><span style={{color:'rgba(240,237,230,0.3)'}}>Before first US hire.</span>
@@ -103,7 +103,7 @@ export default function FoundersPage() {
           <div style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}></div>
         </div>
 
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:'12px',marginBottom:'32px'}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(260px, 1fr))',gap:'12px',marginBottom:'32px'}}>
           {[
             {path:'Path 1',title:'Continue at Sprint pace.',body:'Same team, same intensity, same scope. The right move when early signal is strong. Do not change the formula. Compound it.'},
             {path:'Path 2',title:'Scale the Engine.',body:'Press the advantage. Add SDR and field sales capacity, run a US ICP tour, expand content, run account-based programs, brief US analysts.'},
@@ -122,7 +122,7 @@ export default function FoundersPage() {
       </section>
 
       {/* CTA */}
-      <section style={{margin:'0 48px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+      <section style={{margin:'0 48px 64px',backgroundColor:'rgba(232,160,32,0.08)',border:'1px solid rgba(232,160,32,0.2)',borderRadius:'10px',padding:'24px 28px',display:'flex',flexDirection:'column',alignItems:'flex-start',gap:'16px'}}>
         <div>
           <div style={{color:'#f0ede6',fontSize:'16px',fontWeight:'700',letterSpacing:'-0.01em',marginBottom:'4px'}}>Ready to enter the US the right way?</div>
           <div style={{color:'rgba(255,255,255,0.35)',fontSize:'12px'}}>One conversation. No commitment.</div>
