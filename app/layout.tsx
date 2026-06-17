@@ -21,7 +21,7 @@ export default function RootLayout({
   position:'fixed',top:0,left:0,right:0,zIndex:50,
   padding:'12px 20px',
   display:'flex',alignItems:'center',justifyContent:'space-between',
-  backgroundColor:'rgba(8,13,26,0.97)',
+  backgroundColor:'rgba(15,14,26,0.97)',
   borderBottom:'1px solid rgba(255,255,255,0.07)',
 }}>
   <a href="/" style={{display:'flex',alignItems:'center'}}>
@@ -35,19 +35,19 @@ export default function RootLayout({
     <a href="/founders" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}} className="desktop-only">Founders</a>
     <a href="/investors" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}} className="desktop-only">Investors</a>
     <a href="/about" style={{color:'rgba(255,255,255,0.45)',fontSize:'12px',fontWeight:'500'}} className="desktop-only">About</a>
-    <a href="/contact" style={{
-      backgroundColor:'#e8a020',color:'#080d1a',
+    <a href="https://meetings-na2.hubspot.com/bo-wandell" target="_blank" rel="noreferrer" style={{
+      backgroundColor:'#e8a020',color:'#0f0e1a',
       padding:'8px 14px',borderRadius:'6px',
       fontSize:'12px',fontWeight:'700',
       whiteSpace:'nowrap',
     }}>Book a Call</a>
   </div>
 </nav>
-        <div style={{paddingTop:'57px',backgroundColor:'#080d1a',minHeight:'100vh'}}>
+        <div style={{paddingTop:'57px',backgroundColor:'#0f0e1a',minHeight:'100vh'}}>
           {children}
         </div>
         <footer style={{
-          backgroundColor:'#080d1a',
+          backgroundColor:'#0f0e1a',
           borderTop:'1px solid rgba(255,255,255,0.07)',
           padding:'24px 32px',
           display:'flex',justifyContent:'space-between',alignItems:'center',
