@@ -114,7 +114,7 @@ export default function AboutPage() {
           <div style={{color:'#f0ede6',fontSize:'16px',fontWeight:'700',letterSpacing:'-0.01em',marginBottom:'4px'}}>Want to know if we are the right fit?</div>
           <div style={{color:'rgba(255,255,255,0.60)',fontSize:'14px'}}>One conversation. No commitment.</div>
         </div>
-        <a href="/contact" style={{backgroundColor:'#e8a020',color:'#0f0e1a',fontSize:'14px',fontWeight:'700',padding:'12px 24px',borderRadius:'6px',whiteSpace:'nowrap',textDecoration:'none'}}>Book a call →</a>
+        <a href="/contact" style={{backgroundColor:'#e8a020',color:'#0f0e1a',fontSize:'14px',fontWeight:'700',padding:'12px 24px',borderRadius:'6px',whiteSpace:'nowrap',textDecoration:'none'}}>Get in touch →</a>
       </section>
 
     </main>
